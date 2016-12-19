@@ -1,0 +1,10 @@
+User-agent: gsa-crawler
+Disallow:
+
+User-agent: *
+Disallow: /graduateprograms/pages/courses.aspx?*
+Disallow: /graduateprograms/pages/course-schedule.aspx?*
+Disallow: /graduateprograms/pages/course-sections.aspx?*
+Disallow: /undergraduateprograms/pages/courses.aspx?*
+Disallow: /undergraduateprograms/pages/course-schedule.aspx?*
+Disallow: /undergraduateprograms/pages/course-sections.aspx?*

@@ -1,0 +1,32 @@
+#searchContainer, #controllerContainer{
+	display: none;
+}
+
+.subpage #primaryNav{
+	height: 32px;
+	background: none;
+	border-bottom: 4px solid #8a8a8a;
+}
+
+
+#sideBar, #footerContainer, #primaryNav{
+	display: none;
+}
+
+#primaryContent{
+	width: 950px;
+	font-size: 12px;
+}
+
+#primaryContent #content.small{
+	width: 635px;
+}
+
+#crumbsContainer{
+	margin-left: 15px;
+}
+
+/* Hide Logos */
+#logoContainer{
+	display: none;
+}

@@ -1,0 +1,3 @@
+[submodule "classes/DrakeCS195"]
+	path = classes/DrakeCS195
+	url = https://github.com/jremmons/DrakeCS195.git
