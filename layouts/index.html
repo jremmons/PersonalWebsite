@@ -2,7 +2,7 @@
 <body>
   
   <div class="container">
-    <div style="background-color:#F4F4F4;margin-top:10px;margin-bottom:10px;padding-top:5px;padding-left:15px;padding-right:15px;padding-bottom:5px;border-radius:5px;">
+    <div style="margin:5px;padding:0px 15px 0px 15px;">
 
       <h2 class="title" style="text-align: center">John R. Emmons</h2>
 
@@ -10,48 +10,72 @@
 
       <p style="text-align:center;width:100%;">
         <a href="images/john_emmons_headshot.jpg">
-          <img src ="images/john_emmons_headshot.jpg" style="max-width:400px;width:100%;border-radius:10px;" alt="john emmons headshot"/>
+          <img src ="images/john_emmons_headshot.jpg" style="max-width:300px;width:100%;border-radius:10px;" alt="john emmons headshot"/>
         </a>
       </p>
       
       <p>
-        <!-- <b>Contact:</b> <a href="mailto:jemmons@standford.edu">jemmons@standford.edu</a> -->
-        <b>Blog:</b> <a href="http://blog.johnemmons.com/">blog.johnemmons.com</a>
+        <div class="">
+          <span class="vitals">Blog:</span> <a href="http://blog.johnemmons.com/">blog.johnemmons.com</a>
+        </div>
         
-        <br /><b>Contact:</b> <a href="mailto:mail@johnemmons.com">mail@johnemmons.com</a>
+        <div class="">
+          <span class="vitals">Email:</span> <a href="mailto:mail@johnemmons.com">mail@johnemmons.com</a>
+        </div>
         
-        <br /><b>Links:</b>
-        <a href="https://github.com/jremmons">Github</a>,
-        <a href="https://scholar.google.com/citations?user=onFEaswAAAAJ">Google Scholar</a>,
-        <a href="https://www.linkedin.com/in/john-emmons-71959044">Linkedin</a>
+        <div class="">
+          <span class="vitals">Links:</span>
+          <a href="https://github.com/jremmons">Github</a>,
+          <a href="https://scholar.google.com/citations?user=onFEaswAAAAJ">Google Scholar</a>,
+          <a href="https://www.linkedin.com/in/john-emmons-71959044">Linkedin</a>
+        </div>
         
-        <br /><b>Vitals:</b>
-        <a href="john_emmons_cv.pdf">CV/Resume</a>,
-        <!-- <a href="john_emmons_resume.pdf">Resume</a>, -->
-        <a href="research.txt">Research and Career Goals (txt)</a>
+        <div class="">
+          <span class="vitals">Vitals:</span>
+          <a href="john_emmons_cv.pdf">CV/Resume</a>
+        </div>
       </p>
     </div>
-    
-    <div style="margin-top:10px;margin-bottom:10px;padding-top:10px;padding-left:15px;padding-right:15px;">
-      <b>Biographical Sketch <!--<a href="bio.html">(more about me)</a>-->:</b>
+
+
+    <div style="margin-top:10px;margin-bottom:10px;;padding-left:15px;padding-right:15px;">
+
+      <hr style="border-top:5px solid rgb(0,0,0)" \>
+
+      <div class="news">Recent news (March 29, 2017):</div>
+      <p>
+        I just got back from NSDI'17! It was a great conference. Check out the
+        <a href="http://ex.camera/nsdi17">ExCamera</a>
+        [<a href="files/john_emmons_excamera_slides.pdf">slides</a>]
+        [<a href="files/john_emmons_excamera.pdf">pdf</a>] submission and the demo
+        I prepared for the talk!
+      </p>
+      
+      <hr style="border-top:5px solid rgb(0,0,0)" \>
+      
+      <div class="header">Research Interests:</div>
+      <p>
+        My research interests are broadly at the intersection of computer
+        systems and machine learning (specifically computer vision). My current
+        work focuses on building systems that explore the trade-off space
+        between accuracy and throughput for deep neural network based visual
+        queries on video.
+      </p>
+      
+      <div class="header">Biographical sketch:</div>
       <p>
         I am first year PhD student at Stanford University studying computer
         science and rotating
-        with <a href="https://cs.stanford.edu/~keithw/">Keith
-        Winstein</a>. During my undergrad, I participated in
+        with
+        <!-- <a href="https://cs.stanford.edu/~keithw/">Keith Winstein</a>. -->
+        <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a>.
+        During my undergrad, I participated in
         the <a href="https://engineering.wustl.edu/prospective-students/dual-degree/Pages/default.aspx">engineering
         dual degree program</a> between Washington University in St. Louis and
         Drake University. I have an MS degree in computer science and three BS
         degrees in (1) computer engineering, (2) electrical engineering, and (3)
         computer science, mathematics and physics (triple major).
       </p>
-
-      <!-- <p> -->
-      <!--   I am a mentor with <a href="https://coderdojo.com/">CoderDojo</a> where -->
-      <!--   I teach at-risk middle school students basic computer science and web -->
-      <!--   programming. Our webserver is located -->
-      <!--   at <a href="http://coder.jemmons.us/">coder.jemmons.us</a>. I also -->
-      <!-- </p> -->
 
       <p>
         In my spare time, I run long-distance road races, competing mostly in
@@ -61,14 +85,13 @@
         placing 68th of 6067 participants and 9th in my age division.
       </p>
 
-      <b>Publications: <a href="publications.bib">(bibtex)</a></b>
+      <div class="header">Publications: <a href="publications.bib">(bibtex)</a></div>
       <p>
         Daniel Kang, <span style="text-decoration:underline;">John
           Emmons</span>, Firas Abuzaid, Peter Bailis, Matei
-        Zaharia. "<a href="https://arxiv.org/pdf/1703.02529.pdf">
-          Optimizing Deep CNN-Based Queries over Video Streams at
-          Scale</a>". VLDB (under review).
-        Mar. 2017. [<a href="files/john_emmons_noscope.pdf">pdf</a>]
+          Zaharia. "<a href="https://arxiv.org/pdf/1703.02529.pdf">Optimizing
+          Deep CNN-Based Queries over Video Streams at Scale</a>". VLDB (under
+          review).  Mar. 2017. [<a href="files/john_emmons_noscope.pdf">pdf</a>]
       </p>
 
       <p>

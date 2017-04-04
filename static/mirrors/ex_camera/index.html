@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ExCamera</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+
+    <style>
+      html *
+      {
+      font-family: Lato !important;
+      }
+    </style>
+  </head>
+  <body style="margin:0;padding:0;">
+
+    <div class="container">
+      <div class="row" style="padding-bottom:25px;">
+	<div class="col-md-12" style="padding-top:5px; padding-bottom:25px; margin:10px; border-radius: 5px;background-color: rgb(225,225,225);">
+	  <h1>ExCamera</h1>
+	  <div style="font-size:15pt;">Encoding, Fast and Slow: Low-Latency Video Processing Using Thousands of Tiny Threads [<a href="https://www.usenix.org/system/files/conference/nsdi17/nsdi17-fouladi.pdf">pdf</a>]</div>
+	  <div style="font-size:15pt;font-style:italic;">Sadjad Fouladi, et al.</div>
+	</div>
+
+	<div class="col-md-12" style="margin:10px 10px 0px 10px;font-size:12pt;">
+	  <span style="font-weight:bold;">Abstract:</span> We describe ExCamera, a system that can edit, transform, and encode a video, including 4K and VR material, with low latency. The system makes two major contributions. First, we designed a framework to run general-purpose parallel computations on a commercial "cloud function" service. The system starts up thousands of threads in seconds and manages inter-thread communication. Second, we implemented a video encoder intended for fine-grained parallelism, using a functional-programming style that allows computation to be split into thousands of tiny tasks without harming compression efficiency. Our design reflects a key insight: the work of video encoding can be divided into fast and slow parts, with the "slow" work done in parallel, and only "fast" work done serially
+	</div>
+
+	<div class="col-md-12" style="margin:10px;font-size:12pt;">
+	  <span style="font-weight:bold;">Demo: </span>you may have seen <a href="john_emmons_nsdi17.jpg">this</a> guy walking around with a GoPro strapped to his head during the first day of NSDI'17. <a href="http://johnemmons.com">John</a> is <span style="text-decoration: line-through;">our guinea pig</span> a first year PhD student at Stanford we enlisted to record his interactions at the conference. We scanned over all the faces that John saw using a deep neural network based face recognition package (<a href="https://cmusatyalab.github.io/openface/">OpenFace</a>) that we deployed onto our AWS lambda supercomputing system, mu. Our goal was to find all of the times John saw our ExCamera collaborator, <a href="https://cseweb.ucsd.edu/~gmporter/">George Porter</a>; we wanted to make sure he made it safely to Boston :). Once all the time slices of George were identified we quickly encoded a montage using our ExCamera system. The first video displayed below is the full 5.5 hour long video John took while at the conference and the second video is the montage we generated in just a few minutes on stage!
+	</div>
+	
+	<div class="col-md-12" style="margin:10px;margin-top:0px;font-size:12pt;">
+	  To perform the face recognition and stitch the montage together, our system performs the following steps:
+	  <ol>
+	    <li>Upload image with face of interest to S3 and perform standard <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html">image augmentation</a> techniques to generate a training set.</li>
+	    <li>Use a deep neural network (DNN) to locate and generate 128-dimensional feature vectors for the face in each augmented image in the training set.</li>
+	    <li>Train a KNN classifier with (1) the augmented image feature vectors and (2) labeled faces in the wild (<a href="http://vis-www.cs.umass.edu/lfw/">lfw</a>) feature vectors.</li>
+	    <li>Run the DNN featurizer and KNN classifier in parallel across the entire video using 3000+ AWS lambda workers to perform recognition.</li>
+	    <li>Aggregate all the frames where the face of interest was recognized.</li>
+	    <li>Launch ExCamera to encode the frames into a montage!</li>
+	  </ol>
+	</div>
+
+	<div class="col-md-6" style="padding-top:10px;text-align: center;">
+	  <div style="border:solid;border-width:2px;">
+	    <div style="font-size:20pt;">NSDI'17 Day 1</div>
+	    <div style="font-size:15pt;padding-bottom:10px;">video cred: <a href="http://johnemmons.com">john emmons</a> with a GoPro</div>
+	    <iframe width="100%" height="350px" style="" src="https://www.youtube.com/embed/RgY_dxuza18" frameborder="0"></iframe>
+	  </div>
+	</div>
+
+	<div class="col-md-6" style="padding-top:10px;text-align: center;">
+	  <div style="border:solid;border-width:2px;">
+	    <div style="font-size:20pt;">George Porter Montage</div>
+	    <div style="font-size:15pt;padding-bottom:10px;color:white;user-select: none;">Video cred: john emmons with a GoPro</div>
+
+	    <!-- You're looking at the page source I see :). -->
+	    <!-- When the video is finished processing the `output-gp.webm` video file will be uploaded to our s3 bucket. -->
+	    <!-- Reload this page at the end of the presentation; the video will be ready for you to view then! -->
+	    <video style="width: 100%; height:350px;" controls autoplay muted loop>
+	      <source src="https://s3.amazonaws.com/excamera-demo-us-east-1/output-gp.webm" type="video/webm" />
+	      The '<video>' is not supported by your browser.
+	    </video>
+	  </div>
+	</div>
+
+	<div class="col-md-12" style="padding-top:15px;margin:10px;margin-top:0px;font-size:12pt;">
+	  Demo prepared by John Emmons. 
+	</div>
+
+      </div>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-96350853-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

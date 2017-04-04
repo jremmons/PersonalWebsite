@@ -1,0 +1,67 @@
+.news {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.vitals {
+    font-weight: bold;
+}
+
+a:link {
+    color: rgb(20,20,20);
+}
+
+a:visited {
+    color: rgb(20,20,20);
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: blue;
+}
+
+html {
+    font-family: '', sans-serif;
+    color:rgb(0,0,0);
+    background-color:rgb(255,255,255);
+}
+
+ul {
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 40px;
+}
+
+li {
+    list-style: disc;
+    list-style-position: outside;
+    margin: 0 0 0 0;
+}
+
+.container{
+    max-width: 768px;
+}
+
+.itemhead {
+    font-weight: bold;
+    font-size: 13pt;    
+}
+
+.sechead {
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+
+sechead span {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    display: block;
+}
