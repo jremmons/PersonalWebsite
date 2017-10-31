@@ -1,0 +1,273 @@
+/*   
+Theme Name: Newsroom Responsive Design
+Theme URI: http://wwwtest.drake.edu/
+Description: WordPress v3.0.1
+Author: Carl Olsen
+Author URI: http://carl-olsen.com
+Version: 1
+*/
+
+@media screen {
+
+#bg_left .menu-open-news-menu-container, #bg_left #menu-open-news-menu {
+	width: 309px;
+}
+#bg_left #menu-open-news-menu li {
+	width: 307px;
+}
+#bg_left #menu-open-news-menu a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 247px;
+	height: 52px;
+	margin: 0 30px;
+	padding: 12px 0;
+	color: #ffffff;
+	display: block;
+	font-family: 'Crimson Text', serif;
+	font-size: 24px;
+	text-decoration: none;
+	line-height: 1.2;
+	text-align: left;
+	border-bottom: 1px #7e87a1 dotted;
+}
+#bg_left #menu-open-news-menu .current_page_parent
+{
+	border-top: 1px #7e87a1 dotted;
+	width: 309px;
+	background-color: #212121;
+	margin-top: 0;
+	padding-top: 0;
+	border-bottom: 1px #7e87a1 dotted;
+}
+#bg_left #menu-open-news-menu .current_page_parent a
+{
+	border-bottom: none;
+	color: #ffe76f;
+}
+#bg_left #menu-open-news-menu a:hover {
+	color: #ffe76f;
+}
+#bg_left #menu-open-news-menu ul {
+	width: 309px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	background-color: #212121;
+	color: #ffffff !important;
+}
+#bg_left #menu-open-news-menu ul li,
+#bg_left #menu-open-news-menu ul .current-post-parent
+{
+	border-top: none;
+	width: 307px;
+	border-bottom: none;
+}
+#bg_left #menu-open-news-menu ul li a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 247px;
+	height: auto;
+	margin: 0 15px 0 45px;
+	padding: 6px 0;
+	color: #ffffff !important;
+	display: block;
+	font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 1.2;
+	text-align: left;
+	border-bottom: none;
+}
+#bg_left #menu-open-news-menu ul li a:hover {
+	color: #ffe76f !important;
+}
+#bg_left #menu-open-news-menu ul li.current-post-parent a
+{
+	border-bottom: none;
+	color: #ffe76f !important;
+}
+#main_content {
+	float: left;
+	display: block;
+	max-width: 891px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-image: url(/wp-content/themes/responsive/images/BGCenterColumn.png);
+	background-repeat: repeat-y;
+	background-color: transparent;
+
+}
+#main_frame
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 831px;
+	height: auto;
+	margin: 15px 0 15px 15px;
+	padding: 0;
+}
+
+#news_content { width: 575px; margin: 0; padding: 0 0 0 15px; font-size: 12px; line-height: 1.8; }
+#news_content h2 { font-size:18px; color: #004477; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; }
+#news_content h2 a { color: #004477; text-decoration: none; }
+#news_content h2 a:hover { color: #004477; text-decoration: underline; }
+#news_content h2 a:visited { color: #004477; }
+#news_content h2.post  { font-size: 28px; color: #004477; }
+
+#news_categories ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#news_categories li {
+	display: block;
+	float: left;
+	padding-right: 10px;
+}
+
+#drake_news {
+	width: 589px;
+	height: 80px;
+	overflow: hidden;
+}
+.drake_news_thumb {
+	width: 110px;
+	float: left;
+}
+.drake_news_post {
+	width: 450px;
+	float: left;
+}
+#sidebar-primary {
+	width: 290px;
+	margin-bottom: 8px;
+}
+#sidebar-secondary {
+	width: auto;
+}
+#sidebar-secondary ul {
+	list-style-type: none;
+}
+h1 {
+	line-height: 1.1;
+}
+
+} /* END screen media */
+
+@media only screen and (max-width: 1220px) {
+
+}
+
+@media only screen and (max-width: 970px) {
+
+#main_frame {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding: 15px;
+}
+#news_content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+#drake_news {
+	width: 100%;
+}
+#drake_news img {
+	width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 941px) {
+	
+} /* END 941 */
+
+@media only screen and (max-width: 940px) {
+
+#menu-news-category-menu, #header3_search {
+	display: none;
+	float: left;
+	background-color: #414141;
+    height: auto;
+	width: 100%;
+	border-left: 1px solid rgb(126, 135, 161);
+	border-top: 1px solid rgb(126, 135, 161);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+#menu-open-news-menu {
+	display: none;
+}
+#menu-news-category-menu li {
+	color: rgb(255, 255, 255);
+	background-image: url(/wp-content/themes/responsive/images/BGDeptSecondary.png);
+	cursor: pointer;
+	display: list-item;
+	font-size: 16px;
+	font-weight: bold;
+	list-style: none;
+	line-height: 32px;
+	border-bottom: 1px dotted rgb(126, 135, 161);
+	border-top: none;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin: 0 0 0 -1px;
+	min-height: 18px;
+	padding: 0;
+	text-align: left;
+	white-space: nowrap;
+	height: 36px;
+	width: 100%;
+}
+#menu-news-category-menu li a {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: block;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', sans-serif;
+	height: 35px;
+	line-height: 32px;
+	list-style: none;
+	text-align: left;
+	text-decoration: none;
+	width: 100%;
+	padding: 0 5px 3px 20px;
+}
+#menu-news-category-menu li a:hover {
+}
+#main_content {
+	max-width: 604px;
+	background-image: none;
+}
+
+} /* END 940 */
+
+@media only screen and (max-width: 640px) {
+
+#main_content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: none;
+	width: 100%;
+}
+
+}

@@ -1,0 +1,270 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: arial, sans serif;
+	font-size: 12px;
+	line-height: 16px;	
+	/*background: #ecf0f2 url("bground-gradient.gif") top left repeat-x;*/
+	background: #ffffff;
+}
+
+a, #sideBar #subNavigation li.active ul li a, #sideBar #subNavigation li ul li.active ul li a, #sideBar #subNavigation li.activeParent ul li a{
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover, a.active{
+	color: #990000;
+}
+
+a img{
+	border: none;
+}
+
+#pageContainer{
+	background: url("background-logo.gif") center 20px no-repeat;
+	position: relative;
+}
+
+#primaryContainer{
+	width: 978px;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+/* logo Container */
+#logoContainer {
+	background: url("background-logo.gif") center 0 no-repeat;
+	height: 94px;
+	height: 114px;
+	position: relative;
+	top: 20px;
+}
+
+#logoContainer img{vertical-align: top;}
+#logoContainer #washu{display: block; width: 450px; height: 49px; padding-left: 2px;}
+#logoContainer #engineering{display: block; position: absolute; right: 158px; top: 19px; width: 164px; height: 48px;}
+#logoContainer #washuEngineeringCenter{display: block;}
+
+/* Search Container */
+#searchContainer{
+	position: absolute;
+	top: 96px;
+	left: 658px;
+}
+
+#searchContainer input#s{
+	border: 1px solid #989898;
+	font-family: verdana, arial, sans serif;
+	font-size: 10px;
+	color: #848484;
+	line-height: 16px;
+	width: 192px;
+	padding: 2px 2px 3px 2px;
+	*padding: 0 2px 4px 2px;
+}
+
+#searchContainer input.button{
+	position: relative;
+	top: 6px;
+	*top: 4px;
+}
+
+/* Primary Navigation */
+#primaryNav{
+	height: 30px;
+	*height: 31px;
+	overflow: visible;
+	position: relative;
+	z-index: 50;
+	padding: 13px 0 0 0;
+	_padding-left: 1px;
+}
+
+.subpage #primaryNav{
+	padding-top: 13px;
+	height: 35px;
+	position: relative;
+	top: -1px;
+	background: url("background-primary-nav.gif") bottom left no-repeat;
+}
+
+#primaryNav ul{
+	padding: 0 0 0 1px;
+}
+
+#primaryNav ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+}
+
+#primaryNav ul li a{
+	display: block;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-right: 4px;
+	line-height: 11px;
+	padding-top: 11px;
+	height: 19px;
+	border: 1px solid #e6e6e6;
+	border-bottom: none; 
+	background: #bccad4 url("background-nav.gif") top left repeat-x;
+	position: relative;
+	z-index: 60;
+	
+	_font-weight: bold;
+	_font-family: verdana;
+}
+
+#primaryNav ul li.active ul li a{color: #990000;}
+#primaryNav ul li.active a, #primaryNav ul li.active ul li a:hover{background: #fff; color: #000;}
+#primaryNav ul li a:hover, #primaryNav li:hover a, #primaryNav li.sfhover a{
+	background: #f9fafb;
+	border: 1px solid #bec8cd;
+	border-bottom: none; 
+}
+
+#primaryNav ul li#about a, #primaryNav ul li#studentServices a,
+#primaryNav ul li#graduate a, #primaryNav ul li#undergraduate a, #primaryNav ul li#wustl a{
+	padding-top: 5px;
+	height: 25px;
+}
+
+#primaryNav ul li#about a{width: 88px; position: relative; margin-right: 4px;}
+#primaryNav ul li#people a{width: 60px;}
+#primaryNav ul li#research a{width: 81px;}
+#primaryNav ul li#graduate a{width: 83px;}
+#primaryNav ul li#undergraduate a{width: 97px;}
+#primaryNav ul li#studentServices a{width: 80px;}
+#primaryNav ul li#wustl a{width: 88px;}
+
+#primaryNav li ul {
+	position: absolute;
+	width: 195px;
+	left: -9999px;
+	clear: both;
+	border: 1px solid #bec8cd;
+	background: #f9fafb;
+	padding: 8px 6px 6px 8px;
+}
+
+#primaryNav li:hover ul, #primaryNav li.sfhover ul {
+	left: auto;
+	margin: -1px 0 0 0;
+	z-index: 50;
+}
+
+#primaryNav li ul li{
+	display: block;
+	float: none;
+	border-bottom: 1px solid #d8d5d6;
+}
+
+#primaryNav li ul li.hasThirdLevel{
+	border: none;
+}
+
+#primaryNav ul li#about ul li a, #primaryNav ul li#people ul li a, #primaryNav ul li#research ul li a, #primaryNav ul li#graduate ul li a, #primaryNav ul li#undergraduate ul li a, #primaryNav ul li#studentServices ul li a, #primaryNav ul li#wustl ul li a{
+	width: auto;
+	background: none;
+	border: none;
+	text-align: left;
+	height: auto;
+	text-transform: none;
+	padding: 1px 0 1px 0;
+	margin: 1px 0 1px 0;
+	font-size: 11px;
+	line-height: 14px;
+	display: block;
+}
+
+#primaryNav ul li#about ul li a:hover, #primaryNav ul li#people ul li a:hover, #primaryNav ul li#research ul li a:hover, #primaryNav ul li#graduate ul li a:hover, #primaryNav ul li#undergraduate ul li a:hover, #primaryNav ul li#studentServices ul li a:hover, #primaryNav ul li#wustl ul li a:hover{
+	background-color: #fff;
+}
+
+/* Third Level of navigation */
+#primaryNav li ul ul, #primaryNav li:hover ul ul, #primaryNav li.sfhover ul ul{
+	position: static;
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #d8d5d6;
+}
+
+#primaryNav ul li#about ul li ul li a, #primaryNav ul li#people ul li ul li  a, #primaryNav ul li#research ul li ul li  a, #primaryNav ul li#graduate ul li ul li  a, #primaryNav ul li#undergraduate ul li ul li  a, #primaryNav ul li#studentServices ul li ul li  a, #primaryNav ul li#wustl ul li ul li a{
+	padding-left: 20px;
+	background: url("bullet-profile.gif") 8px 4px no-repeat;
+}
+
+#primaryNav ul li#about ul li.active a, #primaryNav ul li#people ul li.active a, #primaryNav ul li#research ul li.active a, #primaryNav ul li#graduate ul li.active a, #primaryNav ul li#undergraduate ul li.active a, #primaryNav ul li#studentServices ul li.active a, #primaryNav ul li#wustl ul li.active a,
+#primaryNav ul li#about ul li ul li.active a, #primaryNav ul li#people ul li ul li.active a, #primaryNav ul li#research ul li ul li.active a, #primaryNav ul li#graduate ul li ul li.active a, #primaryNav ul li#undergraduate ul li ul li.active a, #primaryNav ul li#studentServices ul li ul li.active a, #primaryNav ul li#wustl ul li ul li.active a{
+	color: #000;
+}
+
+/* Footer Container */
+#footerContainer{
+	clear: both;
+	padding: 18px 0 20px 6px;
+	border-top: 3px solid #cad3d9;
+	color: #333333;
+	line-height: 14px;
+	position : relative;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#footerContainer a{
+	font-size: 11px;
+	text-decoration: none;
+}
+
+#footerContainer h4{
+	font-size: 11px;
+	font-weight: bold;
+	padding: 6px 0 0 0;
+	clear: both;
+}
+
+#footerContainer p{
+	font-size: 12px;
+	font-weight: normal;
+	line-height : 1.3;
+}
+
+#footerContainer #miscFooterLinks{
+	float: left;
+	width: 850px;
+	text-align: left;
+}
+
+#footerIcons {
+	position : absolute;
+	right : 3px;
+	top : 17px;
+}
+
+#footerIcons a {
+	float : left;
+	margin-right : 6px;
+}
+
+#footerIcons img {
+	vertical-align : bottom;
+}
+
+/* Misc Elements */
+.clearIt{
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+}

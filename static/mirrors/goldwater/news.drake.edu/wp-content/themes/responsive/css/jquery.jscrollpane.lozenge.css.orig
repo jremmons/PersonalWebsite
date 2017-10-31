@@ -1,0 +1,80 @@
+
+.jspHorizontalBar,
+.jspVerticalBar,
+.jspTrack
+{
+	background: #ffffff;
+}
+
+.jspDrag
+{
+	/* background:  #bbd; */
+	background: #a6c1d4;
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.jspTrack .jspActive,
+.jspTrack .jspHover,
+.jspDrag:hover
+{
+	/* background: #8B8B9F; */
+	background: #6b8faa;
+}
+
+
+.jspArrow
+{
+	background: url(/wp-content/themes/newsroom/images/ui-icons_222222_256x240.png) no-repeat;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.jspVerticalBar>.jspActive,
+.jspArrow:hover
+{
+	background-image: url(/wp-content/themes/newsroom/images/ui-icons_cd0a0a_256x240.png);
+}
+
+.jspVerticalBar>.jspDisabled,
+.jspVerticalBar>.jspDisabled:hover,
+.jspHorizontalBar>.jspDisabled,
+.jspHorizontalBar>.jspDisabled:hover
+{
+	background-color: transparent;
+	background-image: url(/wp-content/themes/newsroom/images/ui-icons_888888_256x240.png);
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 8px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 8px;
+}
+
+.jspArrowUp
+{
+	background-position: 0 0;
+}
+
+.jspArrowDown
+{
+	background-position: -64px 0 !important; 
+}
+
+.jspArrowLeft
+{
+	background-position: -96px 0 !important;
+}
+
+.jspArrowRight
+{
+	background-position: -32px 0 !important;
+}

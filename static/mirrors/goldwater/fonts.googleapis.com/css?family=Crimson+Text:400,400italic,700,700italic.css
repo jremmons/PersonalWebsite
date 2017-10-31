@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(../fonts.gstatic.com/s/crimsontext/v8/a5QZnvmn5amyNI-t2BMkWCtfYakCkPqOMDce0h_3gD8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(../fonts.gstatic.com/s/crimsontext/v8/4j4TR-EfnvCt43InYpUNDCxQL91WRy8t8mPvAX_dIgA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(../fonts.gstatic.com/s/crimsontext/v8/3IFMwfRa07i-auYR-B-zNYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(../fonts.gstatic.com/s/crimsontext/v8/rEy5tGc5HdXy56Xvd4f3I306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+}

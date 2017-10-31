@@ -1,0 +1,96 @@
+/* CSS Document */
+#carls_slideshow {
+	display: block;
+	width: 895px;
+	height: 327px;
+	overflow: hidden;
+}
+.carls_container {
+	position: relative;
+	float: left;
+	width: 589px;
+	height: 327px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.carls_photos {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.carls_photo {
+	position: absolute;
+}
+.carls_caption {
+	width: 589px;
+	margin: 0;
+	padding: 15px 0 10px 0;
+	position: absolute;
+	top: 327px;
+	left: 0;
+	color: #ffffff;
+	background-image: url(carls-content-slideshow.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.carls_caption_content {
+	width: 539px;
+	padding: 0 25px;
+}
+.carls_caption h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0 0 4px 0;
+	line-height: 1.1;
+}
+.carls_caption_content p {
+	margin: 0 0 4px 0;
+	color: #ffffff;
+	line-height: 1.2;
+}
+.carls_caption_content a {
+	color: #ffcc00;
+}
+.carls_caption_content a:hover {
+	color: #ffffff;
+}
+.carls_nav {
+	width: 286px;
+	height: 327px;
+	float: left;
+}
+.carls_nav_item {
+	display: block;
+	width: 270px;
+	height: 89px;
+	padding: 10px 10px 10px 26px;
+	margin: 0;
+	background-color: #b9e1f8;
+	color: #004477;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+.carls_nav_item h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	color: #004477;
+}
+.carls_nav .selected {
+	background-image:url(../../themes/newsroom/images/slider_carrot.png);
+	background-repeat: no-repeat;
+}
+/*
+.carls_nav_item:hover {
+	background-image:url(/wp-content/themes/newsroom/images/slider_carrot.png);
+	background-repeat: no-repeat;
+}
+*/
+.carls_panels {
+	display: none;
+}

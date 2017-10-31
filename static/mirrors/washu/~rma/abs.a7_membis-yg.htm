@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>abs.a5_bei</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR></HEAD>
+<BODY>
+<P align="justify"><font face="Arial">Yuzheng Guo, Jason W. Trobaugh and<b> R. M. Arthur</b>, &quot;Motion 
+Compensation for Temperature Imaging using the Change in Ultrasonic 
+Backscattered Energy&quot;, <i>Memphis Biomedical Imaging Symposium 2007, </i>
+Memphis, Tennessee, 1-2 November 2007.&nbsp;</font></P>
+<FONT face=Arial>
+<P>Abstract</P>
+<p style="margin-top: 0; margin-bottom: 0" align="justify"><b>Background.</b>&nbsp; 
+Ultrasound is an attractive choice for noninvasive thermometry to enhance tumor 
+treatment using hyperthermia.&nbsp; Our theoretical model [1] predicted and 
+in-vitro experiments [2] verified that the change in backscattered ultrasonic 
+energy (CBE) is monotonic (approximately 0.2~0.3dB/oC) with temperature in the 
+hyperthermia range, motivating the usage of CBE for ultrasonic thermometry.&nbsp; 
+One limitation in measuring temperature-dependent CBE from ultrasound images is 
+apparent motion in the images due to change of the speed of sound and motion of 
+the tissue.&nbsp; Previously, a block-matching motion-tracking method was used 
+to compensate rigid motion, but was only successful for small regions [2]. <br>
+<b>Methods.</b>&nbsp; We have developed an algorithm for estimating and 
+compensating non-rigid motion over large 2D or 3D regions.&nbsp; The motion 
+field was modeled to vary linearly over the region of interest and was estimated 
+by maximizing the cross-correlation between the reference and subsequent images 
+using optimization functions in MATLAB®.&nbsp; Factors affecting performance of 
+the algorithm were studied using simulation of images for multiple scatterers 
+[3]. Images before and after motion were simulated by transforming scatterer 
+locations. <br>
+<b>Results.</b>&nbsp; Our algorithm was successfully applied to images from 
+in-vitro and in-vivo heating experiments, with significant improvement in 
+performance over previous results based on qualitative assessment.&nbsp; To 
+study the performance quantitatively, 2D images were simulated with various 
+signal-to-noise ratio (SNR) and types and ranges of motion, including expansion 
+and compression to study image decorrelation.&nbsp; CBE due to motion was 
+different between axial and lateral directions and was about 2.5dB/0.1mm 
+translation and 1dB per ±1% expansion axially and 4.5dB/mm and 0.35dB per ±1% 
+laterally.&nbsp; Error in motion estimation decreased with SNR with minimal 
+impact on CBE and increased with decorrelation leading to 0.1~0.2dB additional 
+CBE.&nbsp; In addition to inducing estimation error and thus CBE, decorrelation 
+itself caused erroneous CBE as much as 0.3~0.4 dB for 6% lateral compression and 
+1% axial compression.<br>
+<b>Conclusions.</b>&nbsp; CBE induced by motion critically limits temperature 
+imaging and thus necessitates accurate motion estimation and compensation.&nbsp; 
+Our current algorithm works effectively with motion studied in simulation and 
+encountered in heating experiments.&nbsp; Future work will include incorporation 
+of nonlinear motion field, estimation of motion in the presence of 
+temperature-dependent CBE, reducing effects of decorrelation, and motion 
+compensation on temperature imaging during clinical hyperthermia.<br>
+&nbsp;</p>
+</FONT>
+<p style="margin-top: 0; margin-bottom: 0" align="justify"><font face="Arial">
+Support:&nbsp; R21-CA90531, R01-CA107558 and the Wilkinson Trust at Washington 
+University, St. Louis.</font></p>
+
+</BODY></HTML>
