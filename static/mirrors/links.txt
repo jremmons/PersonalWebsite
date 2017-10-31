@@ -2,6 +2,6 @@ ex-camera/index.html
 
 nsf-ese-article/aboutthedepartment/pages/
 
-washu/www.ese.wustl.edu/~nehorai/old_ese_website/undergraduateprograms/Pages/PositionsofourrecentBSBSASandMSGraduates.html
+washu/~nehorai/old_ese_website/undergraduateprograms/Pages/PositionsofourrecentBSBSASandMSGraduates.html
 
-nsf-ese-article/aboutthedepartment/pages
+goldwater/news.drake.edu/2013/04/18/drake-students-receive-goldwater-foundation-scholarship-and-honorable-mention-2
