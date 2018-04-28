@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*.php$
+Disallow: /*.php*
+Disallow: /~loui/
+Disallow: /*.cgi$
+Disallow: /*.cgi*
+#Disallow: /
+Crawl-Delay: 2

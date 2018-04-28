@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 5.0">
+<TITLE>abs.98_pfd</TITLE>
+</HEAD>
+<BODY>
+
+<FONT FACE="Arial"><P>
+        J. Hyttinen, <strong>R. M. Arthur</strong>, P. Kauppinen,
+        J. Malmivuo, &quot; Parallel Processing Approach for
+        Finite Difference Modelling of Human Thorax as a Volume
+        Conductor,&quot; <em>Proceedings of the Engineering in
+        Medicine and Biology Conference 1997</em>, 1998.&nbsp;</P>
+
+<P>Abstract</P>
+
+</FONT>
+<p ALIGN="LEFT"><font face="Arial">The finite difference element method (FDM)
+provides a straightforward and easy way to construct and solve</font> <font face="Arial">accurate,
+patient-tailored models of the human thorax as a volume conductor. However, the
+usability of the method is decreased by computationally slow iterative method to
+solve the source-field problem. In this work we present a method to implement
+FDM thorax model into a MASPAR massively parallel array processor.&nbsp; FDM
+elements are based on a rectangular grid that is</font> <font face="Arial">used
+throughout the volume. This grid was mapped directly into the parallel
+processing array in such a way that each processor acts as a computational
+element. The stack of elements at a particular FDM grid position in all slices
+were loaded into the memory of a processor at the same grid point in the
+processor array. Thus the iterative process was</font> <font face="Arial">mapped
+from the single-element mode of the conventional computers into a single-slice
+mode. Each slice can have 16000 elements, which are solved simultaneously,
+decreasing the calculation time accordingly.&nbsp; The array processor will be
+used to obtain solutions for a very accurate thorax model featuring the anatomy
+of the Visible Human Man.</font></p>
+</BODY>
+</HTML>

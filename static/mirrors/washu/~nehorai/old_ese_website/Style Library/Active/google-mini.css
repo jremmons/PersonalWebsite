@@ -1,0 +1,54 @@
+﻿#content{
+	width: 100%;
+}
+
+#glogo{
+	position: absolute;
+	left: 675px;
+}
+
+.advancedSearch #glogo{
+	position: relative;
+	left: 660px;
+}
+
+.primaryGoogleSearchForm .googleSearchInput{
+	width: 340px;
+	padding: 2px;
+	border: 1px solid #a2a2a2;
+	margin-right: 4px;
+}
+
+#resultsMetaData{
+	width: 100%;
+	font-size: 11px;
+	padding-top: 5px;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 3px;
+	margin-bottom: 7px;
+	display: block;
+}
+
+#primaryContent .searchResult{
+	padding: 4px 0 10px 1px;
+}
+
+.searchResult .searchResultLink{
+	font-size: 13px;
+}
+
+.searchResult .searchResultDescription{
+	display: block;
+}
+
+.searchResult .searchResultURL{
+	display: block;
+	color: #565656;
+}
+
+.bottomResultPage{
+	margin: 10px 0 10px 0;
+	padding: 4px 0 0 0;
+	border-top: 2px solid #ccc;
+	text-align: left;
+}
