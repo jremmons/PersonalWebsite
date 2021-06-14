@@ -6,7 +6,7 @@
 
       <h2 class="title" style="text-align: center">John R. Emmons</h2>
 
-      <p style="text-align: center"> Computer science PhD student* at Stanford University</p>
+      <p style="text-align: center">Sr. Staff Machine Learning Scientist at Tesla Autopilot</p>
 
       <p style="text-align:center;width:100%;">
         <a href="images/john_emmons_headshot.jpg">
@@ -15,10 +15,6 @@
       </p>
 
       <p>
-        <!-- <div class=""> -->
-        <!--   <span class="vitals">Blog:</span> <a href="http://blog.johnemmons.com/">blog.johnemmons.com</a> -->
-        <!-- </div> -->
-
         <div class="">
           <span class="vitals">Email:</span> <a href="mailto:mail@johnemmons.com">mail@johnemmons.com</a>
         </div>
@@ -26,14 +22,9 @@
         <div class="">
           <span class="vitals">Links:</span>
           <a href="https://github.com/jremmons">Github</a>,
-          <a href="https://scholar.google.com/citations?user=onFEaswAAAAJ">Google Scholar</a>,
           <a href="https://www.linkedin.com/in/john-emmons-71959044">Linkedin</a>
         </div>
 
-        <!-- <div class=""> -->
-        <!--   <span class="vitals">Vitals:</span> -->
-        <!--   <a href="john_emmons_cv.pdf">CV/Resume</a> -->
-        <!-- </div> -->
       </p>
     </div>
 
@@ -42,10 +33,10 @@
 
       <hr style="border-top:5px solid rgb(0,0,0)" \>
 
-      <div class="news">Recent news (January 1st, 2020):</div>
+      <div class="news">Recent news (June 1st, 2021):</div>
       <p>
-        *I am on leave of absence from my PhD! I currently lead a team
-        of talented scientists and engineers at
+        I dropped out of my PhD! I currently lead a team of talented
+        scientists and engineers at
         <a href="https://www.tesla.com">Tesla</a> Autopilot AI. We are
         the brains behind Autopilot's camera only 3D perception system
         in urban environments.
@@ -56,16 +47,14 @@
       <div class="header">Research interests:</div>
       <p>
         My research interests are broadly at the intersection of
-        computer systems and machine learning (specifically computer
-        vision). My current work focuses on building systems that
-        accelerate video compression, transmission, and semantic
-        understanding.
+        computer systems and computer vision. My current work focuses
+        on building low-latency systems for 3D object detection.
       </p>
 
       <div class="header">Biographical sketch:</div>
       <p>
-        I am a PhD student at Stanford University studying computer
-        science (co-advised
+        Until recently, I was a PhD student at Stanford University
+        studying computer science (co-advised
         by <a href="https://cs.stanford.edu/~keithw/">Keith
         Winstein</a>
         and <a href="http://cvgl.stanford.edu/silvio/">Silvio
@@ -80,132 +69,8 @@
 
       <p>
         In my spare time, I run long-distance road races, competing
-        mostly in marathons and half marathons. My most recent success
-        was the San Francisco Marathon; I finished
-        in <a href="https://www.runraceresults.com/Secure/RaceResults.cfm?ID=RCLF2017">2:57:47</a>,
-        placing 43rd of 6506 participants and 9th in my age division.
+        mostly in marathons and half marathons.
       </p>
-
-      <div class="header">Projects:</div>
-      <p>
-        <span style="font-style:italic;">Salsify</span>
-        (<a href="https://snr.stanford.edu/salsify/">blog</a>,
-        <a href="https://github.com/excamera/alfalfa">code</a>,
-        <a href="https://www.youtube.com/watch?v=jaDelb4JnP4">demo</a>,
-        <a href="/files/john_emmons_salsify.pdf">pdf</a>): Salsify is
-        a system for real-time Internet video transmission that
-        achieves 3.9x lower delay and 2.7dB higher visual quality on
-        average when compared with five existing systems: FaceTime,
-        Hangouts, Skype, and WebRTC with and without scalable video
-        coding. Salsify achieves these gains through a joint design of
-        the video codec and transport protocol that features a tighter
-        integration between these components. In our paper (linked
-        above), we describe the design and implementation of Salsify
-        and the series of experiments we performed to quantitatively
-        measure its performance improvement.
-      </p>
-
-      <p>
-        <span style="font-style:italic;">NoScope</span>
-        (<a href="http://dawn.cs.stanford.edu/2017/06/22/noscope/">blog</a>,
-        <a href="https://github.com/stanford-futuredata/noscope">code</a>,
-        <a href="files/john_emmons_noscope.pdf">pdf</a>):
-        Video data is exploding -- the UK alone has over 400 thousand
-        CCTVs, and YouTube users upload over 300 hours of video every
-        minute. Recent advances in deep learning enable automated
-        analysis of this growing amount of video data, allowing us to
-        query for objects of interest, detect unusual and abnormal
-        events, and sift through lifetimes of video that no human
-        would ever want to watch. However, these deep learning methods
-        are extremely computationally expensive: state-of-the-art
-        methods (as of 2017) for object detection run at ~100 frames
-        per second on a NVIDIA P100 GPU. This is tolerable for small
-        numbers of videos, but it is infeasible for real deployments
-        at scale. In this project, I helped build a system that
-        accelerates the computation of deep CNN based visual queries
-        using ideas borrowed from the database community.
-      </p>
-
-      <p>
-        <span style="font-style:italic;">AWSLambdaFace</span>
-        (<a href="http://blog.johnemmons.com/post/awslambdaface/">blog</a>,
-        <a href="https://github.com/excamera/AWSLambdaFace">code</a>):
-        Serverless compute platforms such as Amazon Web Services (AWS)
-        Lambda were intended to be used for web microservices and to
-        handle asynchronous events generated by other Amazon web
-        services (DynamoDB, S3, SNS, etc.). However, AWS Lambda also
-        allows users to upload arbitrary Linux binaries along with
-        their lambda functions. In this project, I deployed a
-        full-blown deep convolutional neural network based face
-        recognition tool on AWS Lambda and used the system to query
-        for faces in videos in a massively parallel way.
-      </p>
-
-      <div class="header">Publications: <a href="publications.bib">(bibtex)</a></div>
-      <p>
-          Sadjad
-          Fouladi, <span style="text-decoration:underline;">John
-          Emmons</span>, Emre Orbay, Catherine Wu, Riad Wahby, Keith
-          Winstein. "<a href="https://www.usenix.org/conference/nsdi18/presentation/fouladi">Salsify:
-          Low-Latency Network Video through Tighter Integration
-          between a Video Codec and a Transport Protocol</a>". NSDI.
-          Mar. 2018. [<a href="files/john_emmons_salsify.pdf">pdf</a>]
-      </p>
-
-      <p>
-        Dustin M. Schroeder, Julian A. Dowdeswell, Emma J. Mackie,
-        Katherine
-        I. Vega, <span style="text-decoration:underline;">John
-        R. Emmons</span>, Keith Winstein, Robert G. Bingham and Toby
-        J. Benham,
-        "<a href="https://agu.confex.com/agu/fm17/preliminaryview.cgi/Paper207562.html">High-Resolution
-        Digitization of the Film Archive of SPRI/NSF/TUD Radar
-        Sounding of the Antarctic Ice Sheet</a>." AGU. Dec. 2017.
-      </p>
-
-      <p>
-        Daniel Kang, <span style="text-decoration:underline;">John
-          Emmons</span>, Firas Abuzaid, Peter Bailis, Matei
-          Zaharia. "<a href="https://arxiv.org/pdf/1703.02529.pdf">Optimizing
-          Deep CNN-Based Queries over Video Streams at
-          Scale</a>". VLDB.
-          Aug. 2017. [<a href="files/john_emmons_noscope.pdf">pdf</a>]
-      </p>
-
-      <p>
-        Hongyi Xin, Sunny Nahar, Richard
-        Zhu, <span style="text-decoration:underline;">John
-        Emmons</span>, Gennady Pekhimenko, Carl Kingsford, Can Alkan,
-        and Onur
-        Mutlu. "<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/11/13/bioinformatics.btv670.abstract">Optimal
-        Seed Solver: Optimizing Seed Selection in Read
-        Mapping</a>". Oxford Bioinformatics,
-        Nov. 2015. [<a href="files/john_emmons_oss_bioinfo2015.pdf">pdf</a>][<a href="files/john_emmons_oss_cmu_technical_report.pdf">supp</a>]
-      </p>
-
-      <p>
-        Hongyi Xin, John Greth, <span style="text-decoration:
-          underline;">John Emmons</span>, Gennady Pekhimenko, Carl
-          Kingsford, Can Alkan, and Onur
-          Mutlu. "<a href="http://bioinformatics.oxfordjournals.org/content/early/2015/01/10/bioinformatics.btu856.abstract">Shifted
-          Hamming Distance: A Fast and Accurate SIMD-Friendly Filter
-          for Local Alignment in Read Mapping</a>". Oxford
-          Bioinformatics,
-          Dec. 2014. [<a href="files/john_emmons_bioinfo2014.pdf">pdf</a>]
-      </p>
-
-      <p>
-        Igor A. Ivanov, Anatoli S. Kheifets, Klaus
-        Bartschat, <span style="text-decoration: underline;">John
-        Emmons</span>, Sean M. Buczek, Elena V. Gryzlova, and Alexei
-        N. Grum-Grzhimailo. <a href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.90.043401">"Displacement
-        effect in strong-field atomic ionization by an XUV
-        pulse"</a>. Physical Review Letters
-        A. Oct. 2014. [<a title="Phys. Rev. A 90, 043401"
-        href="files/john_emmons_PhysRevA.90.043401.pdf">pdf</a>]
-      </p>
-
-    </div>
 
   </div>
   {{ partial "footer.html" . }}
